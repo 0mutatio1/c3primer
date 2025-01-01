@@ -26,3 +26,19 @@ void _2_4_4() {
 	// constexpr int* p1 = &j;      // p1 is a constant pointer to the int j
 
 }
+
+void _2_30() {
+	// For each of the following declarations indicate whether the object being declared has top-level or low-level const.
+	const int v2 = 0; int v1 = v2; // top-level const
+	int* p1 = &v1, &r1 = v1; // low-level const
+	const int* p2 = &v2, *const p3 = &i, &r2 = v2; // low-level const
+}
+
+void _2_31() {
+	// Given the declarations in the previous exercise determine whether the following assignments are legal. Explain how the top-level or low-level const applies in each case.
+	// r1 = v2; // legal, v2 is a const int
+	// p1 = p2; // illegal, p2 is a pointer to a const int
+	// p2 = p1; // legal, p1 is a pointer to an int
+	// p1 = p3; // illegal, p3 is a const pointer to an int
+	// p2 = p3; // legal, p3 is a const pointer to an int
+}

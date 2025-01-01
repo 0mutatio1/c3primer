@@ -20,3 +20,22 @@ int main()
 
     return 0;
 }
+
+void _2_13() {
+    // what is the value of j in the following program?
+    // int i = 42;
+    // int main() {
+    //     int i = 100;
+    //     int j = i;
+    // }
+    // j is 100
+}
+
+void _2_14() {
+    // Is the following program legal? If so, what values are printed?
+    int i = 100, sum = 0;
+    for (int i = 0; i != 10; ++i)
+        sum += i;
+    std::cout << i << " " << sum << std::endl;
+    // i is 100, sum is 45
+}

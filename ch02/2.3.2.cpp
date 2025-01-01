@@ -52,6 +52,63 @@ int _2_3_2() {
 	return 0;
 }
 
-int main() {
-	return 0;
+void _2_18() {
+	// Write code to change the value of a pointer.
+	int i = 42;
+	int* p = &i;
+	*p = 0;
+}
+
+void _2_19() {
+	// Explain the key differences between pointers and references.
+	// A reference is another name for an object, a pointer is an object.
+	// A reference must be initialized, a pointer can be initialized at any time.
+	// A reference always refers to the object with which it is initialized, a pointer can point to different objects.
+	// A reference always refers to the same object, a pointer can point to different objects.
+	// A reference is not an object, a pointer is an object.
+	// A reference is not a variable, a pointer is a variable.
+	// A reference is not a constant, a pointer can be a constant.
+	// A reference is not a pointer, a pointer is a pointer.
+	// A reference is not a null, a pointer can be null.
+}
+
+void _2_20() {
+	// What does the following program do?
+	int i = 42;
+	int* p1 = &i; // p1 points to i
+	*p1 = *p1 * *p1; // i = i * i
+}
+
+void _2_21() {
+	// Explain each of the following definitions. Indicate whether any are illegal and, if so, why.
+	// int i = 0; // i is an int with value 0
+	// double* dp = &i; // illegal, dp is a pointer to double, i is an int
+	// int *ip = i; // illegal, ip is a pointer to int, i is an int
+	// int* ip = &i; // ip is a pointer to int, i is an int
+}
+
+void _2_22() {
+	// Assuming p is a pointer to int, explain the following code:
+	// if (p) // ...
+	// if (*p) // ...
+	// if (p) // if p is not a null pointer
+	// if (*p) // if the object to which p points is not 0
+}
+
+void _2_23() {
+	// Given a pointer p, can you determine whether p points to a valid object? If so, how? If not, why not?
+	// No, you cannot determine whether p points to a valid object. You can only determine whether p is a null pointer.
+}
+
+void _2_24() {
+	// Why is the initialization of p legal but that of lp illegal?
+	int i = 42;
+	void* p = &i; // legal
+	// long* lp = &i; // illegal, lp is a pointer to long, i is an int
+}
+
+void _2_25() {
+	// (a) int * ip, &r = ip; // illegal, ip is a pointer to int, r is a reference to int
+	// (b) int i, * ip = 0; // legal, i is an int, ip is a null pointer
+	// (c) int* ip, ip2; // legal, ip is a pointer to int, ip2 is an int
 }

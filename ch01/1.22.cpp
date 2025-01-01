@@ -19,5 +19,12 @@ int main() {
 
 	std::cout << ">>>" << item0 << std::endl;
 
+	//
+	// Sales_item item2, item3;
+	// while (std::cin >> item3) {
+	//	item2 = item2 + item3;
+	//}
+	//std::cout << ">>>" << item2 << std::endl;
+
 	return 1;
 }

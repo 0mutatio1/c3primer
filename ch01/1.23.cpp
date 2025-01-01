@@ -2,19 +2,33 @@
 #include "Sales_item.h"
 
 int main() {
-	//Sales_item book;
 
-	// std::cin >> book;
-	// std::cout << book << std::endl;
+	Sales_item total;
 
-	Sales_item item0, item1;
-	while (std::cin >> item1) {
+	int count = 1;
+	if (std::cin >> total) {	
+		Sales_item item;
+		while (std::cin >> item) {
+			if (total.isbn() == item.isbn()) {
+				total += item;
+				count++;
+			}
+			else {
+
+				std::cout << total << std::endl;
+				std::count << "Total count: " << count << std::endl;
+
+				std::cout << total << std::endl;
+				total = item;
+				count = 1;
+			}
+		}
 		
-		item0 = item0 + item1;
-
+	} else {
+		std::cerr << "No data?!" << std::endl;
+		return -1;
 	}
 
-	std::cout << ">>>" << item0 << std::endl;
 
 	return 1;
 }

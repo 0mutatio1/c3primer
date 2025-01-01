@@ -8,5 +8,18 @@ int forLoop0()
     }
     std::cout << "Sum of 1 to 10 inclusive is "
         << sum << std::endl;
+
+    // while loop equivalent
+    sum = 0;
+    val = 1;
+    while (val <= 10) {
+        sum += val;
+        ++val;
+    }
+    // the advantage of for loop is that the initialization, condition, and update are all in one place
+    // the disadvantage is that the initialization is not visible outside the loop
+
+    // the difference between for and while loop is that the for loop has the initialization, condition, and update in one place
+
     return 0;
 }

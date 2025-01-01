@@ -23,3 +23,15 @@ void _2_5_2() {
 
 
 }
+
+void _2_34() {
+
+}
+
+void _2_35() {
+	const int i = 42;  // i is const int
+	auto j = i;        // j is int
+	const auto &k = i; // k is const int&
+	auto *p = &i;   // p is a pointer to const int
+	const auto j2 = i, &k2 = i; // j2 is const int, k2 is const int&
+}

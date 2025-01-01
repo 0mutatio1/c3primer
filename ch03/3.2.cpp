@@ -16,3 +16,22 @@ void _3_2() {
 	string temp(10, 'c'); // temp is cccccccccc
 	string s8 = temp;     // copy temp into s8
 }
+
+void _3_2() {
+	
+	string word;
+	
+	while (std::cin >> word) {
+		std::cout << word << std::endl;
+	}
+
+}
+
+void _3_3() {
+	// Explain how whitespace characters are handled in the string input operator and in the getline function.
+	// \n is left in the input stream by the string input operator, but is removed by getline
+	string line;
+	while (getline(cin, line)) {
+		cout << line << endl;
+	}
+}
